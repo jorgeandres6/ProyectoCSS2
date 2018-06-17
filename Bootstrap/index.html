@@ -9,19 +9,91 @@
     <link rel="stylesheet" href="css/estilos.css">
 
   </head>
-  <body>
-    <header class="container">
+  <body class="bg-light">
+    <header class="container-fluid">
         <div class="row align-items-end">
-          <div class="col-lg-4 align-self-start bg-dark">
-            <img src="img/musicalogo.jpg" alt="Logo Musica" width="50%">
+          <div class="col-lg-4 align-self-start">
+            <img src="img/musicalogo.jpg" alt="Logo Musica" width="25%">
           </div>
-          <div class="align-self-end col-lg-4 offset-lg-4 bg-dark">
-              <img src="img/facebook.png" alt="Facebook logo" width="10%">
-              <img src="img/twitter.png" alt="Facebook logo" width="10%">
-              <img src="img/instagram.png" alt="Facebook logo" width="10%">
+          <div class="col-lg-4 offset-lg-4 d-flex justify-content-end">
+              <img src="img/facebook.png" alt="Facebook logo" width="10%" height="10%">
+              <img src="img/twitter.png" alt="Facebook logo" width="10%" height="10%">
+              <img src="img/instagram.png" alt="Facebook logo" width="10%" height="10%">
           </div>
         </div>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-1">
+      <div class="container-fluid">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Page 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Page 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Page 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Page 4</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Page 5</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Page 6</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9"> <!--Articulos-->
+          <div class="row"> <!--Articulo 1-->
+            <div class="col-lg-9">
+              <h1>Rombai</h1>
+              <p>Rombai es un grupo Uruguayo nacido en 2014. Su genero es cumbia cheta tiene canciones muy buenas entre las cuales podemos encontrar "Noche loca", "Locuras contigo" entre otras. Fue una banda muy sonada en años anteriores sin embargo se encuentran en receso pero proximamente se reconformará la banda y lanzarán nuevas canciones</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="img/rombai.jpg" class="img-fluid" alt="Rombai">
+            </div>
+          </div>
+          <div class="form-group"><!--Entrada 1-->
+            <label for="Entrada1">Comentario</label>
+            <input type="text" name="entrada1" id="Entrada1" class="form-control">
+          </div>
+          <div class="row"><!--Articulo 2-->
+            <div class="col-lg-3">
+              <img src="img/huyanay.jpg" class="img-fluid" alt="Rombai">
+            </div>
+            <div class="col-lg-9">
+              <h1>Huayanay</h1>
+              <p>Huayanay es una agrupacion Ecuatoriana conformada en 2017. Su genero es una mezcla entre musica ancestral con un poco de electro, lo cual crea un mix muy original y agradable al oido. Entre las canciones que tienen destaca "Invocación".</p>
+            </div>
+          </div>
+          <div class="form-group"><!--Entrada 2-->
+            <label for="Entrada2">Comentario</label>
+            <input type="text" name="entrada2" id="Entrada2" class="form-control">
+          </div>
+        </div>
+        <div class="col-lg-3"> <!--Busqueda-->
+          <div class="row">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary" type="button">Buscar</button>
+              </div>
+              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="row">
+            <ul class="list-group w-100 m-0 p-0">
+              <li class="list-group-item">Mike Posner</li>
+              <li class="list-group-item">Jason Derulo</li>
+              <li class="list-group-item">Karol G</li>
+              <li class="list-group-item">Juanes</li>
+              <li class="list-group-item">Juan Fernando Velasco</li>
+              <li class="list-group-item">Shakira</li>
+              <li class="list-group-item">Aud</li>
+              <li class="list-group-item">Panda</li>
+              <li class="list-group-item">Maroon 5</li>
+              <li class="list-group-item">Sharon</li>
+              <li class="list-group-item">Mirella Cesa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
