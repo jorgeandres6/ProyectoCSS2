@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width:device-width,user-scalable=no">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>GastroQuito</title>
 
     <link rel="stylesheet" href="css/foundation.min.css">
@@ -20,11 +20,14 @@
 
   <body>
     <div class="row" id="cuerpo"> <!--Cuerpo-->
-      <div class="column large-4"><!--Seccion izquierda-->
+      <div class="column large-4 separacion hide-for-small-only"><!--Seccion izquierda-->
         <div class="row column"><!--Busqueda-->
-          <label for="Busqueda">Buscar</label>
-          <input type="text" name="buscar" id="Busqueda">
-          <!--<span><button type="button" name="button">Buscar</button></span>-->
+          <div class="input-group searchbar">
+            <div class="input-group-button">
+              <button class="button search">Buscar</button>
+            </div>
+            <input class="input-field search-field" type="search"/>
+          </div>
         </div>
         <div class="row column"><!--Menu-->
           <ul class="vertical menu">
@@ -82,9 +85,12 @@
       </div>
     </div>
 
-    <div class="column large-7 large-offset-1"><!--Seccion derecha-->
-      <div class="row column"><!--Articulo 1-->
+    <div class="column large-7 large-offset-1 separacion"><!--Seccion derecha-->
+      <div class="row column opaco"><!--Articulo 1-->
         <h2>Buñuelos</h2>
+      </div>
+      <div class="row column">
+        <h4>20 Junio 2018</h4>
       </div>
       <div class="row column">
         <img src="img/bunuelo.jpg" alt="Buñuelos" width="100%">
@@ -101,6 +107,9 @@
         <h2>Bolon</h2>
       </div>
       <div class="row column">
+        <h4>20 Junio 2018</h4>
+      </div>
+      <div class="row column">
         <img src="img/bolones.jpg" alt="Bolones de verde" width="100%">
       </div>
       <div class="row column">
@@ -114,7 +123,7 @@
     </div>
   </div>
 
-    <script type="js/foundation.min.js"></script>
     <script type="js/jquery.js"></script>
+    <script type="js/foundation.min.js"></script>
   </body>
 </html>
